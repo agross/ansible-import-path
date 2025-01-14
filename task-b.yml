@@ -1,0 +1,3 @@
+- name: A name to make ansible-lint happy
+  ansible.builtin.debug:
+    msg: <root>/task-b.yml was imported

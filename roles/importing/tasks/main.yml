@@ -1,0 +1,15 @@
+- name: Import a local task file
+  ansible.builtin.import_tasks:
+    file: local.yml
+
+- name: Import a task file from tasks/ (explicit)
+  ansible.builtin.import_tasks:
+    file: tasks/task-a.yml
+
+- name: Import a task file from tasks/ (implicit)
+  ansible.builtin.import_tasks:
+    file: task-a.yml
+
+- name: Import a task file from the root
+  ansible.builtin.import_tasks:
+    file: task-b.yml
